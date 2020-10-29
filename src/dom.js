@@ -85,7 +85,7 @@ window.dom = {
         node.removeEventListener(eventName, fn)
     },
     find(selector,scope) {
-        return (scope || document).querySelector(selector)
+        return (scope || document).querySelectorAll(selector)
     },
     parent(node) {
         return node.parentNode
